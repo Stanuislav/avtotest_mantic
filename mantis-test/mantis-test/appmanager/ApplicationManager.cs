@@ -78,11 +78,11 @@ namespace mantis_test
 
         public ManagementMenuHelper ProjectMenu
         {
-            get { return ProjectMenu; }
+            get { return projectMenu; }
         }
         public ProjectManagementHelper Project
         {
-            get { return Project; }
+            get { return project; }
         }
 
 

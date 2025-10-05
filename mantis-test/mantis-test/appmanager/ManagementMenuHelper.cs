@@ -15,8 +15,8 @@ namespace mantis_test
         [SetUp]
         public void OpenPageProject ()
         {
-            driver.FindElement(By.CssSelector("fa fa-gears menu-icon")).Click();
-            driver.FindElements(By.CssSelector("nav nav-tabs padding-18"))[2].Click();
+            driver.FindElement(By.XPath("//a[@href='/mantisbt-2.27.1/manage_overview_page.php']")).Click();
+            driver.FindElement(By.XPath("//a[@href='/mantisbt-2.27.1/manage_proj_page.php']")).Click();
         }
     }
 }

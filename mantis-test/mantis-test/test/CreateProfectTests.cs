@@ -13,8 +13,13 @@ namespace mantis_test
         [Test]
         public void TestCreationProfectTest()
         {
-            app.Project.Creation();
+            ProjectData project = new ProjectData("testPgofectMantis1", "testPgofectMantisDesc1");
 
+            int oldProfect = app.Project.GetProjectGount();
+
+            app.Project.Creation(project);
+
+            Assert.That(oldProfect + 1, Is.EqualTo(app.Project.GetProjectGount()));
         }
     }
 }

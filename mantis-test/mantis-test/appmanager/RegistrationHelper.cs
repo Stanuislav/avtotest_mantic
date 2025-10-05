@@ -24,12 +24,12 @@ namespace mantis_test
 
         private void OpenRegistrationForm()
         {
-            driver.FindElements(By.Id("login-links"))[0].Click();
+            driver.FindElement(By.CssSelector(".back-to-login-link.pull-left")).Click();
         }
 
         private void SumbitRegistration()
         {
-            driver.FindElement(By.CssSelector("input.button")).Click();
+            driver.FindElement(By.CssSelector(".bigger-110")).Click();
         }
 
         private void FillRegistrationForm(AccountData account)
@@ -40,7 +40,7 @@ namespace mantis_test
 
         private void OpenMainPage()
         {
-            manager.Driver.Url = "http://localhost/mantisbt-1.3.20/login_page.php";
+            manager.Driver.Url = "http://localhost/mantisbt-2.27.1/";
         }
     }
 }
