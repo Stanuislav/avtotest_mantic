@@ -27,14 +27,14 @@ namespace mantis_test
         private ApplicationManager()
         {
             driver = new FirefoxDriver();
-            baseURL = "http://localhost/";
+            baseURL = "http://localhost/mantisbt-2.27.1/";
             loginHelper = new LoginHelper(this);
             projectMenu = new ManagementMenuHelper(this);
             project = new ProjectManagementHelper(this);
 
             Registration = new RegistrationHelper(this);
             Ftp = new FtpHelper(this);
-            
+            Admin = new AdminHelpercs(this, baseURL);
         }
 
         public static ApplicationManager GetInstance()
@@ -85,6 +85,8 @@ namespace mantis_test
             get { return project; }
         }
 
+        public AdminHelpercs Admin
+        { get; set; }
 
     }
 }

@@ -1,0 +1,1 @@
+PHP SOAP extension is not enabled.
