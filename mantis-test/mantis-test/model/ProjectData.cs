@@ -15,6 +15,10 @@ namespace mantis_test
             this.ProjectDescription = projectDescription;
 
         }
+        public ProjectData()
+        {
+
+        }
 
 
         public bool Equals(ProjectData other)
@@ -58,5 +62,7 @@ namespace mantis_test
 
         public string NameProfect { get; set; } 
         public string ProjectDescription { get; set; }
+
+        public string Id { get; set; }
     }
 }

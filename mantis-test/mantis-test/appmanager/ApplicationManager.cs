@@ -35,6 +35,7 @@ namespace mantis_test
             Registration = new RegistrationHelper(this);
             Ftp = new FtpHelper(this);
             Admin = new AdminHelpercs(this, baseURL);
+            API = new APIHelper(this);
         }
 
         public static ApplicationManager GetInstance()
@@ -88,6 +89,8 @@ namespace mantis_test
         public AdminHelpercs Admin
         { get; set; }
 
+        public APIHelper API
+        { get; set; }
     }
 }
 
