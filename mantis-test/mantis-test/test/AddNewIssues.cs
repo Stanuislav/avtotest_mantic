@@ -20,7 +20,7 @@ namespace mantis_test
             };
 
 
-
+            //Тут нужно получать вначале список проектов всех, если нет создавать
             ProjectData project = new ProjectData()
             {
                 Id = "7"

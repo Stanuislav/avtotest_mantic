@@ -13,11 +13,15 @@ namespace mantis_test
         {
             this.NameProfect = nameProfect;
             this.ProjectDescription = projectDescription;
-
         }
         public ProjectData()
         {
 
+        }
+
+        public ProjectData(string nameProfect)
+        {
+            this.NameProfect = nameProfect;
         }
 
 
